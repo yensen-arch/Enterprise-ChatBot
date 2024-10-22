@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar.js";
 import Carousel from "./components/Carousel.js";
 import Cardgroup from "./components/Cardgroup.js";
+import Footer from "./components/Footer.js";
 function App() {
   return (
     <div className="min-h-screen bg-blue-300">
@@ -8,6 +9,7 @@ function App() {
         <Navbar />
         <Carousel />
         <Cardgroup/>
+        <Footer />
       </div>
     </div>
   );

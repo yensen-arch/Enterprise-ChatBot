@@ -51,12 +51,12 @@ const buttons = [
 const Cardgroup = () => {
   return (
     <div className="bg-white rounded-lg shadow-md transition duration-300 ">
-      <div className="justify-center flex m-4 p-4 rounded-3xl bg-blue-200  items-center">
+      <button className="justify-center flex my-4 p-4 rounded-3xl w-full bg-blue-200 items-center">
         <h2 className="text-xl font-semibold">Book Your Tickets Online</h2>
-        <button className="text-blue-500 p-2 hover:text-blue-700">
+        <span className="text-blue-500 p-2 hover:text-blue-700">
           <FaArrowRight />
-        </button>
-      </div>
+        </span>
+      </button>
       <div className="grid grid-cols-2 gap-4 ">
         {buttons.map(({ label, icon, bg, hoverBg }, index) => (
           <button
@@ -71,23 +71,14 @@ const Cardgroup = () => {
         ))}
       </div>
       <div className="mt-4">
-      <div className="flex m-4 p-4 rounded-3xl bg-pink-100  justify-center">
-        <h2 className="text-xl font-semibold">Book Your Tickets Online</h2>
-        <button className="text-blue-500 p-2 hover:text-blue-700">
-          <FaArrowRight />
+        <button className="flex p-4 rounded-3xl bg-pink-100 w-full justify-center">
+          <h2 className="text-xl font-semibold">About DMRC</h2>
+          <span className="text-blue-500 p-2 hover:text-blue-700">
+            <FaArrowRight />
+          </span>
         </button>
       </div>
-      </div>
-      <div className="m-4 border border-gray-300 rounded-3xl mx-4 flex">
-        <input
-          type="text"
-          placeholder="Type or use mic to ask a query..."
-          className=" p-2 mx-4 w-full"
-        />
-        <button className="ml-2  text-gray-800 rounded-md p-2 transition duration-300">
-          <FaMicrophone />
-        </button>
-      </div>
+      
     </div>
   );
 };
